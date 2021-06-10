@@ -1,0 +1,400 @@
+html, body {
+    /* The html and body elements cannot have any padding or margin. */
+    background: url(img/background.png.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#page{
+    position: relative;
+    min-height: 100vh;
+}
+
+#content{
+    padding-bottom: 3rem;    /* Footer height */
+    min-height: 960px;
+}
+
+#footer {
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding-top: 5px;
+    color: red;
+    box-shadow: 0 -1px 20px 20px black;
+    height: 3rem;            /* Footer height */
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0px)
+}
+
+.navBanner{
+    position: absolute;
+    background-color: #82769e;
+    top: 370px;
+    left: 50%;
+    width: 800px;
+    height: 70px;
+    margin-right: -50%;
+    transform: translate(-50%, 0px);
+    max-width: 90%;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 2px black;
+    position: relative;
+}
+
+/* MENU start */
+.menu, .menuLi ul { /*for different ul must be ne classes*/
+    list-style-type: none;
+    position: absolute;
+    left: 50%;
+    margin-right: -54%;
+    transform: translate(-54%, -12px);
+    padding: 0;
+}
+.menu li {
+    width: 140px;
+    margin-left: 10px;
+    position: relative;
+    display:inline-block;
+    text-align:center;
+    background:transparent;
+    border: none;
+}
+.menu li a {
+    float: left;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 0;
+    text-decoration: none;
+    font-size:1em;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: khaki;
+    display: inline-block;
+    width: 140px;
+    height: 32px;
+    box-shadow: 0 0 5px 2px white;
+    font-family: 'Lemon', cursive;
+}
+.menu li a:hover {
+    background-color: mediumpurple;
+    color: black;
+    border-style: solid;
+    border-color: white;
+}
+
+.menu li a.active {
+    background-color: black;
+    color: khaki;
+}
+
+/*index -------*/
+.row { /*grid fix because of off-set borders*/
+    margin-top: 430px;
+    width: 100%;
+    text-align: center; /* center the content of the container*/
+    box-shadow:0 0 5px 1px #611694;
+
+    /*display: flex;*/
+    justify-content: center;
+
+}
+
+.col-md-1 {
+    display: inline-block; /* display inline with ability to provide width/height*/
+    min-height: 420px;
+    max-height: 100%;
+    /*WAS 600px but need to add display-flex to .row */
+    max-width: 610px; /*WAS 600px but need to add display-flex to .row */ /*WAS 600px but need to add display-flex to .row */ /*WAS 600px but need to add display-flex to .row */
+    background-color: #82769e;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 2px black;
+    margin-right:1%;
+    margin-left:1%;
+    position: relative;
+}
+
+.row h1{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.8em;
+    width: 100%;
+    color: black;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px rosybrown;
+}
+
+.col-md-1 p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2em;
+
+    width: 100%;
+    color: #2d2837;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px black;
+}
+
+/* GAMED DESIGN PAGE */
+.rowGameDesign{
+    width: 100%;
+    box-shadow:0 0 5px 1px #611694;
+    /* 3 Box align to the top equally*/
+    display: flex;
+    justify-content: center;
+    text-align: center; /* center the content of the container*/
+}
+
+.col-md-2{
+    display: inline-block; /* display inline with ability to provide width/height*/
+    min-height: 400px;
+    max-height: 100%;
+    max-width: 400px;
+    background-color: #82769e;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 2px black;
+    margin-right:1%;
+    margin-left:1%;
+}
+
+#one{
+    background-color: deepskyblue;
+}
+#two{
+    background-color: khaki;
+}
+#three{
+    background-color: mediumpurple;
+}
+.col-md-2 h2{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.6em;
+
+    width: 100%;
+    color: black;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px rosybrown;
+}
+
+/* ---------------------------------------------------*/
+.col-md-0 h1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.8em;
+    width: 100%;
+    color: black;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px rosybrown;
+}
+
+.col-md-0{
+    width: 100%;
+    text-align: center; /* center the content of the container*/
+    box-shadow:0 0 5px 1px #611694;
+}
+/* ---------------------------------------------------*/
+.col-md-2 p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2em;
+
+    width: 100%;
+    color: #2d2837;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px black;
+}
+/* GAMED DESIGN PAGE */
+
+.rowDevTeam {
+    margin-top: 0;
+    width: 100%;
+    box-shadow:0 0 5px 1px #611694;
+    /* 3 Box align to the top equally*/
+    text-align: center; /* center the content of the container*/
+}
+
+.rowDevTeam h1 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.8em;
+    width: 100%;
+    color: black;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px rosybrown;
+}
+
+.col-md-3 {
+    display: inline-block; /* display inline with ability to provide width/height*/
+    min-height: 400px;
+    max-height: 100%;
+    max-width: 600px;
+    background-color: #82769e;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 2px black;
+    margin-right:1%;
+    margin-left:1%;
+}
+
+.col-md-3 h2 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.6em;
+    width: 100%;
+    color: black;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px rosybrown;
+}
+
+.col-md-3 h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.4em;
+    width: 100%;
+    color: #2d2837;
+    font-weight: bold;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px black;
+}
+
+#five{
+    background-color: khaki;
+}
+#four{
+    background-color: mediumpurple;
+}
+
+.photo1{
+    transform: rotate(-4deg);
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+.photo2{
+    transform: rotate(4deg);
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+#five li{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2em;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 0;
+    -webkit-text-stroke: 1px deepskyblue;
+}
+
+/*Natalia*/
+#four li{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2em;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 0;
+    -webkit-text-stroke: 1px khaki;
+}
+
+.links h4 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1.2em;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lemon', cursive;
+    font-style: italic;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px black;
+}
+
+#cp_widget_cc807c7b-ebc2-49e1-a2f4-ddbc89af6714{
+    box-shadow:0 0 5px 1px #611694;
+
+    display: inline-block; /* display inline with ability to provide width/height*/
+
+    max-height: 100%;
+    /*WAS 600px but need to add display-flex to .row */
+    max-width: 610px; /*WAS 600px but need to add display-flex to .row */ /*WAS 600px but need to add display-flex to .row */ /*WAS 600px but need to add display-flex to .row */
+    background-color: #82769e;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+.videoclass{
+    margin-top: 38px;
+}
+/* GAME PAGE Start*/
+.rowPlayGame{
+    margin-top: 0;
+    max-height: 620px;
+    box-shadow:0 0 5px 1px #611694;
+}
+
+.col-md-8 {
+    box-shadow:0 0 5px 1px #611694;
+}
+
+.row2 { /*grid fix because of off-set borders*/
+    margin-top: 430px;
+    width: 100%;
+    box-shadow:0 0 5px 1px #611694;
+
+    /*display: flex;*/
+    justify-content: center;
+
+}
+/* GAME PAGE end*/
+
